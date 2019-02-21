@@ -8,6 +8,17 @@
 </head>
 <body>
 
+    <div ng-app="app">
+      <div ng-controllers="MainController">
+        Hello, {{ name }}!<br>
+
+        You may be quite {{desc.height}} -
+        but you are also rather {{desc.weight}}.<br>
+
+        <h1>{{judgement}}, {{name}}!</h1>
+      </div>
+    </div>
+
     <script src="js/angular.js"></script>
     <script src="js/app/app.js"></script>
     <script src="js/app/controllers/MainController.js"></script>
